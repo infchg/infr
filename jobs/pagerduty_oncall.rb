@@ -28,7 +28,7 @@ SCHEDULER.every '50m' do
       schedule_result = JSON.parse(response.body)
       user_name = schedule_result['entries'][0]['user']['name']
     else
-      user_name = 'John Doe'
+      user_name = 'J C Zomb'
     end
 
     send_event("#{key}-name", text: user_name)
