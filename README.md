@@ -11,6 +11,7 @@ A [Dashing][dashing] dashboard demo !  based on dashing , heroku,
 * triggered and acknowledged incidents using the [hotness widget][hotness].
 * Display who's on-call for a particular PagerDuty schedule.
 
+This works thanks to valuable inputs as: Heroku Dashing github.com/thegreenrobot/pagerduty_dashing
 
 Sample
 =======
