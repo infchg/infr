@@ -1,13 +1,14 @@
 PagerDuty-Dashing
 =================
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/thegreenrobot/pagerduty_dashing)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/infchg/infr)
 
-[![Build Status](https://travis-ci.org/thegreenrobot/pagerduty_dashing.svg?branch=master)](https://travis-ci.org/thegreenrobot/pagerduty_dashing)
+[![Build Status](https://travis-ci.org/infchg/infr.svg?branch=master)](https://travis-ci.org/infchg/infr)
 
-A [Dashing][dashing] dashboard for PagerDuty Services!
+A [Dashing][dashing] dashboard demo !  based on dashing , heroku, 
 
-* Show the number of triggered and acknowledged incidents using the [hotness widget][hotness].
+* will add graph to the:
+* triggered and acknowledged incidents using the [hotness widget][hotness].
 * Display who's on-call for a particular PagerDuty schedule.
 
 
