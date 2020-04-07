@@ -1,38 +1,101 @@
-<script type='text/javascript'>
-$(function() {
-Dashing.gridsterLayout('[{"col":4,"row":1,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1}]')
+<!--script type='text/javascript'>
+$(function() { Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":0.6},{"col":1,"row":3,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1}]')
 });
-</script>
+</script  no need will do 1 by 1 -->
+<% content_for :title do %>Covid Status Dashboard <% end %>
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="t1" data-view="Text" data-title="testing" data-moreinfo="Fixng incidents!"></div>
-    </li>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="t2" data-view="Text" data-title="Demo" data-moreinfo="b4 deploy"></div>
-    </li>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="a" data-view="Graph" data-title="Data A" data-cool="10" data-warm="62"></div>
+      <div data-id="pa" data-view="Chartjs" data-type="line" data-header="INI .. "
+        data-labels="Mar18,Mar19,Mar20,Mar21,Mar22,Mar23,Mar24,Mar25,Mar26,Mar27,Mar28,Mar29,Mar30,Mar31,Apr1"
+        data-colornames="blue,blue,blue,blue,blue,lightgray,lightgray,lightgray,lightgray,lightgray,red,red,grey,blue,magenta"
+        data-datasets=" 90,207,,,,139,197,139,218,,,,,148,123"
+      ></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="b" data-view="Graph" data-title="B Board" data-cool="0" data-warm="42"></div>
-    </li>    
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="c" data-view="Hotness" data-title="Colored Pxy Status" data-cool="0" data-warm="12"></div>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div
+        data-id="pb" data-view="Chartjs" data-type="line"
+        data-header="SGM"
+        data-labels="Mar18,Mar19,Mar20,Mar21,Mar22,Mar23,Mar24,Mar25,Mar26,Mar27,Mar28,Mar29,Mar30,Mar31,Apr1"
+        data-colornames="blue,blue,blue,blue,blue,lightgray,lightgray,lightgray,lightgray,lightgray,red,red,grey,blue,magenta"
+data-datasets="475,0,627,793,651,601,0,0,712,119,0,756,0,0,127"
+      ></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="d" data-view="Graph" data-title="data from D" data-cool="0" data-warm="52"></div>
-    </li>    
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="e" data-view="Graph" data-title="e" data-cool="-10" data-warm="12"></div>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div
+        data-id="pc" data-view="Chartjs" data-type="line"
+        data-header="Safi.."
+        data-labels="Mar18,Mar19,Mar20,Mar21,Mar22,Mar23,Mar24,Mar25,Mar26,Mar27,Mar28,Mar29,Mar30,Mar31,Apr1"
+        data-colornames="blue,blue,blue,blue,blue,lightgray,lightgray,lightgray,lightgray,lightgray,red,red,grey,blue,magenta"
+data-datasets="10,82,44,0,0,140,0,0,0,0,145,341,0,295,184"
+      ></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="f" data-view="Graph" data-title="Time data F" data-cool="22" data-warm="82"></div>
-    </li>    
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div
+        data-id="pd" data-view="Chartjs" data-type="line"
+        data-header="NM"
+        data-labels="Mar18,Mar19,Mar20,Mar21,Mar22,Mar23,Mar24,Mar25,Mar26,Mar27,Mar28,Mar29,Mar30,Mar31,Apr1"
+        data-colornames="blue,blue,blue,blue,blue,lightgray,lightgray,lightgray,lightgray,lightgray,red,red,grey,blue,magenta"
+data-datasets="0,95,207,,,,140,231,,299,19,,418,,109"
+      ></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div
+        data-id="pe" data-view="Chartjs" data-type="line"
+        data-header="ap"
+        data-labels="Mar18,Mar19,Mar20,Mar21,Mar22,Mar23,Mar24,Mar25,Mar26,Mar27,Mar28,Mar29,Mar30,Mar31,Apr1"
+        data-colornames="blue,blue,blue,blue,blue,lightgray,lightgray,lightgray,lightgray,lightgray,red,red,grey,blue,magenta"
+data-datasets="16,0,0,0,48,354,0,0,113,181,0,0,180,0,363"
+      ></div>
+    </li>
+
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div
+        data-id="pf" data-view="Chartjs" data-type="line"
+        data-header="Meet Skip Holidays"
+        data-labels="Mar18,Mar19,Mar20,Mar23,Mar24,Mar25,Mar26,Mar27,Mar30,Mar31,Apr1"
+        data-colornames="blue,blue,blue,blue,lightgray,lightgray,lightgray,lightgray,grey,blue,magenta"
+data-datasets="5,1,0,4,3,8,7,2,3,5,1"
+       ></div>
+    </li>
+
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+      <div
+        data-id="pg" data-view="Chartjs" data-type="line"
+        data-header="TCplaces"
+        data-labels="Mar18,Mar19,Mar20,Mar21,Mar22,Mar23,Mar24,Mar25,Mar26,Mar27,Mar28,Mar29,Mar30,Mar31,Apr1"
+        data-colornames="blue,blue,blue,blue,blue,lightgray,lightgray,lightgray,lightgray,lightgray,red,red,grey,blue,magenta"
+data-datasets="147,0,0,123,0,0,122,143,0,144,0,123,0,141,138"
+      ></div>
+    </li>
+
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+      <div
+        data-id="ph" data-view="Chartjs" data-type="line"
+        data-header="Stat 15m"
+        data-labels="9:15,9:30,9:45,10:00,10:15,10:30,10:45,11:00"
+        data-colornames="blue,blue,blue,blue,lightgray,lightgray,lightgray,blue"
+data-datasets="4,16,23,17,10,29,34,49"
+      ></div>
+    </li>
+
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+      <div
+        data-id="pi" data-view="Chartjs" data-type="line"
+        data-header="Web 15m"
+        data-labels="9:15,9:30,9:45,10:00,10:15,10:30,10:45,11:00"
+        data-colornames="gray,lightgray,lightgray,lightgray,lightgray,red,red,magenta"
+data-datasets="156,42,69,64,78,82,192,123"
+      ></div>
+    </li>
+
   </ul>
 </div>
+
+<style type="text/css">
+  p { text-align: center; }
+</style>
